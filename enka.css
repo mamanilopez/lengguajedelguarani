@@ -1,0 +1,64 @@
+/* Solo afecta a los contenedores de tarjetas */
+.list-xl {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Diseño en rejilla adaptable */
+    grid-gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+  }
+  
+  /* Tarjetas específicas para cada tema */
+  .list-xl li {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Fondo suave y degradado */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none; /* Elimina los puntos de la lista */
+  }
+  
+  .list-xl li:hover {
+    transform: translateY(-10px); /* Efecto de elevación en hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+  }
+  
+  /* Estilos específicos para los niveles de encabezado dentro de las tarjetas */
+  .list-xl li h1, .list-xl li h2, .list-xl li h3, .list-xl li h4, .list-xl li h5, .list-xl li h6 {
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  /* Estilos para los párrafos dentro de las tarjetas */
+  .list-xl li p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Botón dentro de las tarjetas */
+  .list-xl li a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #2a9d8f; /* Color vibrante para el botón */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list-xl li a:hover {
+    background-color: #21867a; /* Cambia el color al pasar el ratón */
+  }
+  
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .list-xl {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+  }

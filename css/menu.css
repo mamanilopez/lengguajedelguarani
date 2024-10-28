@@ -1,0 +1,17 @@
+.custom-menu-bg {
+    background-color: #333; /* Cambia este color según tus preferencias */
+    color: rgb(210, 216, 18); /* Asegura que el texto sea visible */
+}
+
+.custom-menu-bg .rd-navbar-nav .rd-nav-link {
+    color: rgb(210, 35, 35); /* Color de los enlaces */
+}
+
+.custom-menu-bg .rd-navbar-nav .rd-nav-item.active .rd-nav-link {
+    font-weight: bold; /* Opción: resaltar el enlace activo */
+}
+
+/* Si necesitas ajustar el color al hacer hover */
+.custom-menu-bg .rd-navbar-nav .rd-nav-link:hover {
+    color: #ffcc00; /* Cambia este color para el efecto hover */
+}
